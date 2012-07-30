@@ -1,0 +1,253 @@
+@import url('../artificer/style.css');
+
+/*
+Theme Name: Kamin
+Theme URI:http://www.estherkamin.com
+Author: Amit Kvint
+Author URI: http://webifish.com/
+Version: 0.0.1
+Template: artificer
+Description: An onlline Jewlery shop theme based on the free artificer theme 
+ */
+ 
+ 
+/*
+Goals - 
+
+### Redesign the Woocommerce admin panel
+### Redesign the way products are shown on the front page
+### Emphasise SEO for each product & for all site
+### Learn how to set gateways - including server settings
+### Use Icon fonts
+### Think about a new logo for Esther Kamin
+
+MySql
+
+$mysql_host = "mysql11.000webhost.com";
+$mysql_database = "a7893377_kamin";
+$mysql_user = "a7893377_kamin";
+$mysql_password = "X3868171-p";
+
+*/
+
+/* Colors :
+backgrounds - rgb(204, 173, 92); -  gold green
+darker - rgb(122, 107, 38); -  Zayit
+darkest (texts/shadows/borders) - rgb(69, 63, 35); - Haki dark
+*/
+
+ /*-------------Importing fonts & icon fonts-------------*/
+@font-face {
+    font-family: 'CalligraffitiRegular';
+    src: url('fonts/calligraffiti-fontfacekit/Calligraffiti-webfont.eot');
+    src: url('fonts/calligraffiti-fontfacekit/Calligraffiti-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/calligraffiti-fontfacekit/Calligraffiti-webfont.woff') format('woff'),
+         url('fonts/calligraffiti-fontfacekit/Calligraffiti-webfont.ttf') format('truetype'),
+         url('fonts/calligraffiti-fontfacekit/Calligraffiti-webfont.svg#CalligraffitiRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HeydingsIconsRegular';
+    src: url('fonts/heyding/heydings_icons-webfont.eot');
+    src: url('fonts/heyding/heydings_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/heyding/heydings_icons-webfont.woff') format('woff'),
+         url('fonts/heyding/heydings_icons-webfont.ttf') format('truetype'),
+         url('fonts/heyding/heydings_icons-webfont.svg#HeydingsIconsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+ /*-------------The Body-------------*/
+
+body {
+	background:rgb(204, 173, 92) !important;
+}
+ /*-------------The Top Menu Bar-------------*/
+
+#top {
+	background: rgb(69, 63, 35) !important;
+}
+#top a {
+	font-size: 1.2em;
+}
+#top ul.nav > li a:hover {
+	color: rgb(204, 173, 92);
+}
+
+
+ /*-------------The Header-------------*/
+#header .site-title a {
+	font-family: CalligraffitiRegular;
+	color: rgb(69, 63, 35) !important;
+	text-shadow: 0 2px 0 white, 0 3px 0 rgb(69, 63, 35) !important;
+	font-size: 2.3em;
+}
+#header .site-description {
+	font-family: CalligraffitiRegular;
+	color: rgb(69, 63, 35) !important;
+	font-size: 2em;	
+}
+#header a.cart-button {
+	width: 350px;
+}
+
+#header a.checkout {
+
+}
+#header .site-title.visible {
+	font-size: 2em;
+
+}
+
+
+/*-------------Nav Links & Icons-------------*/
+
+#navigation ul.nav li.home a {
+	border: 0.327em solid rgb(69, 63, 35) !important;
+}
+#navigation ul.nav li.home a span{
+	background-color: rgb(204, 173, 92) !important;
+	padding: 0.8em 1.618em !important;
+}
+#navigation ul.nav > li a:hover {
+	bacground: rgb(69, 63, 35) !important;
+}
+#navigation ul.nav > li a:hover {
+    background: #ECECEC !important;
+    box-shadow: inset 0 0.382em 0 0 rgb(69, 63, 35) !important;
+    -webkit-box-shadow: inset 0 0.382em 0 0 rgb(69, 63, 35) !important;
+    box-shadow: inset 0 0.382em 0 0 rgb(69, 63, 35) !important;
+    -webkit-box-shadow: inset 0 0.382em 0 0 rgb(69, 63, 35) !important;
+    box-shadow: inset 0 0.382em 0 0 rgb(69, 63, 35) !important;
+    -webkit-box-shadow: inset 0 0.382em 0 0 rgb(69, 63, 35) !important;
+  }
+  #navigation ul.nav > li:hover,
+  #navigation ul.nav > li.current_page_item {
+    background: #fff;
+    box-shadow: inset 0 0.382em 0 0 #777777;
+    -webkit-box-shadow: inset 0 0.382em 0 0 #777777;
+    box-shadow: inset 0 0.382em 0 0 #777777;
+    -webkit-box-shadow: inset 0 0.382em 0 0 #777777;
+    box-shadow: inset 0 0.382em 0 0 #777777;
+    -webkit-box-shadow: inset 0 0.382em 0 0 #777777;
+  }
+#menu-item-33 a:hover {
+	border-top: rgb(69, 63, 35) !important;
+}
+#menu-item-33 a:before {
+	font-family: HeydingsIconsRegular;
+	color: rgb(122, 107, 38);
+	vertical-align: baseline;
+	margin-right: 0.1em;
+    content:'S';
+
+}
+
+#menu-item-34 a:before {
+	font-family: HeydingsIconsRegular;
+	color: rgb(122, 107, 38);
+	vertical-align: baseline;
+	margin-right: 0.1em;
+    content:'D';
+
+}
+
+#menu-item-51 a:before {
+	font-family: HeydingsIconsRegular;
+	color: rgb(122, 107, 38);
+	vertical-align: baseline;
+	margin-right: 0.1em;
+    content:'t';
+
+}
+
+#navigation.col-full{
+	background: rgb(204, 173, 92);
+}
+#navigation li {
+	font-size: 2.8em;	
+	font-family: CalligraffitiRegular;
+}
+#navigation ul.nav li a {
+	padding: 0.5em;	
+	color: rgb(69, 63, 35) !important;
+
+}
+/*-------------Upper Right Shopping state Nav-------------*/
+
+.label {
+	padding: .5em;
+	margin: 0 auto;	
+	font-size: 1.4em;
+	color: rgb(69, 63, 35);
+
+}
+
+.amount {
+	color: rgb(69, 63, 35) !important;
+	padding: .5em;
+	margin: 0 auto;	
+	font-size: 1.4em;
+}
+
+.items {
+	padding: .5em;
+	margin: 0 auto;	
+	font-size: 1.4em;
+	background: #ECECEC !important;
+	border-color: rgb(69, 63, 35) !important;
+	color: rgb(69, 63, 35) !important;
+}
+
+.lozenge {
+	padding: .5em;
+	margin: 0 auto;	
+	font-size: 1.4em;
+	background: #ECECEC !important;
+	border-color: rgb(69, 63, 35) !important;
+	color: rgb(69, 63, 35) !important;
+}
+.store-info .email, .phone {
+	background: rgb(122, 107, 38) !important;
+}
+#sidebar .email .inner a {
+	font-size: 1em !important;	
+}
+/*-------------Featured Products on Home Page-------------*/
+ul.featured-products {
+	border-top: 25px solid rgb(69, 63, 35);
+	padding-top: 2em !important;
+}
+ul.featured-products li {
+	margin-left: 1em;	
+}
+ul.featured-products li h3 {
+	background: rgb(69, 63, 35) !important;
+	border-bottom: 0.382em solid rgb(204, 173, 92) !important;
+}
+ul.featured-products li img {
+	border: 1px solid rgb(204, 173, 92);
+}
+ul.featured-products li h3 .amount {
+	color: white !important;
+}
+
+ul.featured-products li h3:before {
+	font-family: HeydingsIconsRegular;
+	font-size: 2em;
+	color: #FFF;
+	vertical-align: baseline;
+	margin-right: 0.5em;
+    content:'t';
+}
+
+
+
+
+
+
+
+
